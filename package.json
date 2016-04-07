@@ -1,7 +1,7 @@
 {
   "name": "jackblog-ionic2",
   "version": "1.0.0",
-  "description": "Jackblog App ionic2.0 版",
+  "description": "jackblog App for ionic2.0",
   "repository": "https://github.com/jackhutu/jackblog-ionic2",
   "license": "MIT",
   "dependencies": {
@@ -38,7 +38,5 @@
   "cordovaPlatforms": [
     "ios",
     "android"
-  ],
-  "name": "jackblog-ionic2",
-  "description": "Jack Hu's blog for ionic2.0"
+  ]
 }
