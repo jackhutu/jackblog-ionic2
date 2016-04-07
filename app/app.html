@@ -1,0 +1,34 @@
+<ion-menu [content]="content">
+  <ion-content class="side-box" [ngStyle]="{'backgroundImage': 'url(img/shanghai.jpg)'}">
+    <div class="menu-header">
+      <div class="avatar">
+        <img [src]="user && user.avatar || defaultAvatar" />
+      </div>
+      <div class="username">{{user && user.nickname || '未登录'}}</div>
+    </div>
+    <ion-list class="nav-list">
+      <button clear class="nav-item" (click)="openPage(rootPage)">
+        <ion-icon ios="ios-home" md="md-home"></ion-icon> Home
+      </button>
+      <button clear class="nav-item" *ngIf="!token || !user" (click)="openPage(loginPage)">
+        <ion-icon ios="ios-lock" md="md-lock"></ion-icon> Login
+      </button>
+      <div *ngIf="token && user">
+        <button clear class="nav-item" (click)="openPage(settingsPage)">
+          <ion-icon ios="ios-settings" md="md-settings"></ion-icon> Settings
+        </button>
+        <button clear class="nav-item" (click)="logout()">
+          <ion-icon ios="ios-unlock" md="md-unlock"></ion-icon> Logout
+        </button>
+      </div>
+    </ion-list>
+
+    <div class="bottom-block">
+      <h1>Jack Hu</h1>
+      <h3>有朋自远方来</h3>
+      <h3>不亦乐乎</h3>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage" class="jackblog-nav"></ion-nav>

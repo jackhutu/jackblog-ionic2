@@ -1,0 +1,25 @@
+<ion-navbar *navbar>
+	<button menuToggle>
+	  <ion-icon name="menu"></ion-icon>
+	</button>
+  <ion-title>settings</ion-title>
+</ion-navbar>
+
+<ion-content padding class="settings-box">
+	<form class="settings-form" 
+		[ngFormModel]="settingsForm"  
+		(ngSubmit)="onSubmit(settingsForm.value)">
+  	<ion-list>
+  	  <ion-item class="signin-item">
+  	  	<ion-label>昵称</ion-label>
+  	    <ion-input type="text" 
+  	    	placeholder="2-15字符，中英文、数字和下划线" 
+  	    	[ngFormControl]="nickname"
+  	    	[(ngModel)]="userNickname"></ion-input>
+  	  </ion-item>
+  	</ion-list>
+  	<div>
+  	  <button type="submit" full [disabled]="!settingsForm.valid">提交</button>
+  	</div>
+	</form>
+</ion-content>

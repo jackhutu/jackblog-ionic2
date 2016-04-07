@@ -1,0 +1,15 @@
+{
+  "dependencies": {},
+  "devDependencies": {},
+  "ambientDependencies": {
+    "cordova": "registry:dt/cordova#0.0.0+20160316155526",
+    "cordova/plugins/device": "registry:dt/cordova/plugins/device#0.0.0+20160316155526",
+    "cordova/plugins/dialogs": "registry:dt/cordova/plugins/dialogs#0.0.0+20160316155526",
+    "cordova/plugins/splashscreen": "registry:dt/cordova/plugins/splashscreen#0.0.0+20160316155526",
+    "cordova/plugins/statusbar": "registry:dt/cordova/plugins/statusbar#0.0.0+20160316155526",
+    "cordova/plugins/toast": "file:declare/Toast.d.ts",
+    "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#4de74cb527395c13ba20b438c3a7a419ad931f1c",
+    "node": "registry:dt/node#4.0.0+20160330064709"
+  },
+  "ambientDevDependencies": {}
+}

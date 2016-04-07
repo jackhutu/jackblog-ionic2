@@ -1,0 +1,43 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Jackblog</ion-title>
+</ion-navbar>
+<ion-content class="outer-content article-list-box">
+  <ion-refresher (refresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list class="article-list">
+    <ion-item *ngFor="#item of articleList" class="article-item">
+      <ion-row (click)="pushPage(item._id)">
+        <ion-col width-75 class="article-left">
+          <div class="article-span">
+            {{item.publish_time | customTime}}
+          </div>
+          <div class="article-span article-title">
+            {{item.title}}
+          </div>
+          <div class="article-count">
+            阅读 {{item.visit_count}} · 评论 {{item.comment_count}}· 喜欢 {{item.like_count}}
+          </div>
+        </ion-col>
+        <ion-col class="article-right" *ngIf="item.images.length > 0">
+          <img class="article-img" [src]="item.images[0].url + '-100x100'" />
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+  <p *ngIf="!isMore" class="noMore">没有更多文章了...</p>
+  <ion-infinite-scroll id="infinite" (infinite)="doInfinite($event)" threshold="20%">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

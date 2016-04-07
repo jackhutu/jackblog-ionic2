@@ -1,0 +1,44 @@
+{
+  "name": "jackblog-ionic2",
+  "version": "1.0.0",
+  "description": "Jackblog App ionic2.0 版",
+  "repository": "https://github.com/jackhutu/jackblog-ionic2",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "2.0.0-beta.7",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.13",
+    "ionic-angular": "2.0.0-beta.3",
+    "ionic-native": "^1.1.0",
+    "ionicons": "3.0.0-alpha.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.5.15"
+  },
+  "devDependencies": {
+    "del": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-watch": "4.3.5",
+    "ionic-gulp-browserify-typescript": "^1.0.0",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-html-copy": "^1.0.0",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^1.0.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-x-toast",
+    "cordova-plugin-whitelist"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    "android"
+  ],
+  "name": "jackblog-ionic2",
+  "description": "Jack Hu's blog for ionic2.0"
+}

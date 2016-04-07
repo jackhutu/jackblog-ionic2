@@ -1,0 +1,39 @@
+.article-list{
+  margin-bottom: 10px;
+  .article-item{
+    padding-left: 0;
+  }
+  .article-left{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    .article-span{
+      flex:1;
+      padding-right: 5px;
+    }
+    .article-title{
+      overflow:hidden !important;
+      white-space:nowrap !important; 
+      text-overflow:ellipsis !important;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .article-right{
+    min-width: 100px;
+    padding: 0;
+    text-align: right;
+    img{
+      width: 100px !important; 
+      height: 100px !important; 
+    }
+  }
+}
+
+.noMore{
+  font-size:16;
+  text-align: center;
+}

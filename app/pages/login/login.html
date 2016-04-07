@@ -1,0 +1,26 @@
+<ion-navbar *navbar>
+	<button menuToggle>
+	  <ion-icon name="menu"></ion-icon>
+	</button>
+  <ion-title>login</ion-title>
+</ion-navbar>
+
+<ion-content padding class="login-box">
+  <form class="signin-form form-horizontal" 
+  	[ngFormModel]="signinForm"
+  	(ngSubmit)="onSubmit(signinForm.value)">
+  	<ion-list>
+  	  <ion-item class="signin-item">
+  	    <ion-input type="text" placeholder="email" [ngFormControl]="email"></ion-input>
+  	  </ion-item>
+
+  	  <ion-item class="signin-item">
+  	    <ion-input type="password" placeholder="password" [ngFormControl]="password"></ion-input>
+  	  </ion-item>
+  	</ion-list>
+
+  	<div>
+  	  <button type="submit" full [disabled]="!signinForm.valid">登录</button>
+  	</div>
+	</form>
+</ion-content>

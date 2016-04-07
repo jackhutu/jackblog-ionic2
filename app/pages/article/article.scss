@@ -1,0 +1,80 @@
+.article-details {
+	.title{
+		font-size: 26px;
+		line-height: 36px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 16px;
+	}
+	.markdown-content{
+		font-size: 16px;
+		font-weight: normal;
+		line-height: 1.7;
+		a{
+			text-decoration: none;
+		}
+		h1{
+			font-size: 26px;
+		}
+		p,ul,ol{
+	        //单词不截断换行,两端对齐,美化页面
+			text-align: justify;
+			text-justify: inter-ideograph;
+			word-break: break-word;
+		}
+		p{
+			margin-bottom:25px;
+		}
+			blockquote{
+				position: relative;
+				padding: 10px 15px;
+				margin-bottom: 20px;
+				border-left:{
+	          width:4px;
+	          style:solid;
+	      };
+				word-break: break-word;
+				font-size: 15px;
+				font-weight: 100;
+				line-height: 30px;
+	      p{
+	         font-size: 15px;
+	         font-weight: normal;
+	         line-height: 1.7;         
+	      }
+	      p:last-child{
+	          margin: 0;
+	      }
+			}
+			ul{
+				margin-bottom: 20px;
+	      li{
+	          line-height: 30px;
+	      }
+			}
+		  img{
+	      max-width:100%;
+	      display:block;margin:0 auto;
+		  }
+		  pre{
+	      word-wrap: normal;
+	      word-break: normal;
+	      overflow: auto;
+	      margin-bottom: 20px;
+	      border: 1px solid rgba(0,0,0,0.15);
+	      padding: 10px 5px;
+	      background-color: #fae5e2;
+	      color: #d96f5d;
+	      code{
+	        padding: 0;
+	      }
+		  }
+		  code{
+		  	background-color: #fae5e2;
+		  	color: #d96f5d;
+	      padding: 2px 4px;
+	      border: none;
+	      white-space: pre;
+		  }
+	}
+}
