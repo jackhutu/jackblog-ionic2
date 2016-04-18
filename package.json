@@ -1,6 +1,6 @@
 {
   "name": "jackblog-ionic2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jackblog App for ionic2.0",
   "repository": "https://github.com/jackhutu/jackblog-ionic2",
   "license": "MIT",
@@ -26,7 +26,8 @@
     "ionic-gulp-fonts-copy": "^1.0.0",
     "ionic-gulp-html-copy": "^1.0.0",
     "ionic-gulp-sass-build": "^1.0.0",
-    "ionic-gulp-scripts-copy": "^1.0.0"
+    "ionic-gulp-scripts-copy": "^1.0.0",
+    "typings": "^0.7.12"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
