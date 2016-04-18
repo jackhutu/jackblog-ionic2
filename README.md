@@ -18,8 +18,8 @@ $ npm install -g ionic@beta
 $ git clone git@github.com:jackhutu/jackblog-ionic2
 $ cd jackblog-ionic2
 $ npm install
-$ ionic plugin install
-$ typings install
+$ ionic platform add ios
+$ ionic platform add android
 ```
 
 ##### 浏览器调试

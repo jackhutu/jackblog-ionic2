@@ -4,6 +4,9 @@
   "description": "jackblog App for ionic2.0",
   "repository": "https://github.com/jackhutu/jackblog-ionic2",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "typings install"
+  },
   "dependencies": {
     "angular2": "2.0.0-beta.7",
     "es6-promise": "3.0.2",
